@@ -1,6 +1,11 @@
+/* eslint-disable no-lone-blocks */
+
 console.group('1. Parašykite funkciją, kuri atspausdina paskutinio masyvo elemento indeksą');
 {
-  // Užduoties sprendimas ir užduoties sprendimo atspausdinimas su duomenimis
+  const numbers = [2, 5, 67, 17, 9];
+
+  const lastItemIndex = (arr: number[]): number => arr.indexOf(arr[arr.length - 1]);
+  console.log('lastItemIndex', lastItemIndex(numbers));
 }
 console.groupEnd();
 

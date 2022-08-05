@@ -1,6 +1,9 @@
 "use strict";
 console.group('1. Parašykite funkciją, kuri atspausdina paskutinio masyvo elemento indeksą');
 {
+    const numbers = [2, 5, 67, 17, 9];
+    const lastItemIndex = (arr) => arr.indexOf(arr[arr.length - 1]);
+    console.log('lastItemIndex', lastItemIndex(numbers));
 }
 console.groupEnd();
 console.group('2. Parašykite funkciją, kuri atspausdina kiekvieno masyvo elemento indeksus eilutėmis');
