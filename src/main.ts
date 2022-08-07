@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+/* eslint-disable no-inner-declarations */
 /* eslint-disable no-lone-blocks */
 
 console.group('1. Parašykite funkciją, kuri atspausdina paskutinio masyvo elemento indeksą');
@@ -11,13 +13,17 @@ console.groupEnd();
 
 console.group('2. Parašykite funkciją, kuri atspausdina kiekvieno masyvo elemento indeksus eilutėmis');
 {
-  // Užduoties sprendimas ir užduoties sprendimo atspausdinimas su duomenimis
+  const words: string[] = ['some', 'moon', 'shore', 'wave'];
+type IndexList = (arr: string[]) => void;
+
+const indexList:IndexList = (arr) => arr.map((__, index) => console.log(index));
+indexList(words);
 }
 console.groupEnd();
 
 console.group('3. Parašykite funkciją, kuri atspausdina kiekvieno masyvo elemento reikšmes eilutėmis');
 {
-  // Užduoties sprendimas ir užduoties sprendimo atspausdinimas su duomenimis
+
 }
 console.groupEnd();
 

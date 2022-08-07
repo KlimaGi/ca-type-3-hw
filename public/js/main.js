@@ -8,6 +8,9 @@ console.group('1. Parašykite funkciją, kuri atspausdina paskutinio masyvo elem
 console.groupEnd();
 console.group('2. Parašykite funkciją, kuri atspausdina kiekvieno masyvo elemento indeksus eilutėmis');
 {
+    const words = ['some', 'moon', 'shore', 'wave'];
+    const indexList = (arr) => arr.map((__, index) => console.log(index));
+    indexList(words);
 }
 console.groupEnd();
 console.group('3. Parašykite funkciją, kuri atspausdina kiekvieno masyvo elemento reikšmes eilutėmis');
