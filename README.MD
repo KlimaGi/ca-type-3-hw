@@ -18,3 +18,5 @@ npm i
 ```
 npm start
 ```
+
+https://github.com/KlimaGi/ca-type-3-hw
